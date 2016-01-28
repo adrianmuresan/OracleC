@@ -1,0 +1,15 @@
+a) I have done 3 commits so far (for parts 7,8, and 9 of the assignment) 
+
+b) The .gitignore file was last modified on 8/24/2015 at 12:19 PM
+
+c) No files existed in the repository on 08/21/2015 at 11:00 PM
+
+d) They were each modified once, when they were created
+
+e) git log shows the commit logs while git status shows the working tree status
+
+f) git log --follow main.java
+
+g) git log --grep=transaction
+
+h) git log --author=Lauren --since="2016-01-05" --before="2016-02-16"
