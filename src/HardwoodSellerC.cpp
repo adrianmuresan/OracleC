@@ -55,17 +55,17 @@ void readInputFile(string inputFilePath)
 
 	cout << "Customer : " << customerName << endl << endl;
 	
-	cout << "Address : " << address << endl << endl;
+	cout << "Address :  " << address << endl << endl;
 	
 	cout << "Wood\tPrice " << endl << endl; 
 	
 	for (list<WoodItem>::iterator it = mylist.begin(); it != mylist.end(); ++it)
 	{
-	cout << (*it).typeWood << "\t\t" << (*it).price << endl; 	
+	cout << (*it).typeWood << "\t\t" << (*it).price << endl << endl;	
 	}
-	cout << "Estimated Time : " << max << endl << endl; 
+	cout << "Estimated Time : " << max << endl << endl << endl;
 	
-	cout << "Total : " << " $ " << total << endl << endl; 
+	cout << "Total : " << " $ " << total << endl << endl << endl;
 	cin.get(); // pause the console
 	}
 	
