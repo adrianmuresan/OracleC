@@ -21,7 +21,7 @@ public:
 
 	// Member functions declaration
 	WoodItem();
-	WoodItem(string woodType, double deliveryTime, double itemPrice);
+	WoodItem(std::string woodType, double deliveryTime, double itemPrice);
 	double getTime();
 	double getPrice();
 	string getType();
