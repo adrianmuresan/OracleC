@@ -1,3 +1,6 @@
+Name: Adrian Muresan
+CS username: muresana
+
 Welcome.
 
 You have sucessfully obtained a copy of the contents in the oracle repository.
