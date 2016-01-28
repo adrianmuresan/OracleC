@@ -1,7 +1,3 @@
-/*
- * WoodItem.h
- */
-
 #include <string.h>
 #include <iostream>
 #include <fstream>
@@ -15,17 +11,17 @@ class WoodItem {
 
 public:
 
-	string woodtype;
+
+	string typeWood;
 	double baseDeliveryTime;
 	double price;
 
 	// Member functions declaration
 	WoodItem();
-	WoodItem(std::string woodType, double deliveryTime, double itemPrice);
+	WoodItem(string woodType, double deliveryTime, double itemPrice);
 	double getTime();
 	double getPrice();
 	string getType();
-	
 
 };
 
