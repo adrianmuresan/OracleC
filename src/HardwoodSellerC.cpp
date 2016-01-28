@@ -3,16 +3,19 @@
 // Description : Main class for the Hardwood Seller
 //============================================================================
 
-#include <iostream>
-using namespace std;
-#include <fstream>
-#include <sstream>
-#include <cstring>
-#include <list>
-#include <string>
+#include<iostream>
+#include<fstream>
+#include<sstream>
+#include<cstring>
+#include<list>
+#include<string>     
 
+#include "WoodItem.h"
+using namespace std;
+
+void readInputFile(string inputFilePath);
 int main() {
-	cout << "This is the order information: " << endl << endl;"
+	cout << "This is the order information:" << endl << endl;
 	readInputFile("order.txt");
 	return 0;
 }
@@ -31,7 +34,7 @@ void readInputFile(string inputFilePath)
 	double total = 0;
 	double max = 0;
 
-	std::list<WoodItem> mylist;
+	list<WoodItem> mylist;
 	ifstream inputFile;
 	inputFile.open(inputFilePath);
     
@@ -56,15 +59,15 @@ void readInputFile(string inputFilePath)
 	
 	cout << "Address : " << address << endl << endl;
 	
-	cout << Wood\tPrice << endl << endl; 
+	cout << "Wood\tPrice " << endl << endl; 
 	
-	for (std::list<WoodItem>::iterator it = mylist.begin(); it != mylist.end(); ++it)
+	for (list<WoodItem>::iterator it = mylist.begin(); it != mylist.end(); ++it)
 	{
 	cout << (*it).woodtype << "\t\t" << (*it).price << endl; 	
 	}
 	cout << "Estimated Time : " << max << endl << endl; 
 	
-	cout << "Total : " << "$" << total << endl << endl; 
-	
-	cin,get() // pause the console
+	cout << "Total : " << " $ " << total << endl << endl; 
+	cin.get(); // pause the console
 	}
+	
